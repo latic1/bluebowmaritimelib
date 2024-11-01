@@ -20,29 +20,25 @@ export const Services = () => {
               title: "Shipping",
               description:
                 "Reliable and efficient shipping solutions to ensure your cargo reaches its destination on time, every time.",
-              imgUrl:
-                "https://images.unsplash.com/photo-1607672632458-9eb56696346b?q=80&w=1914&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8MHx8fA%3D%3D",
+              imgUrl: "/img/slied1.jpg",
             },
             {
               title: "Stevedoring",
               description:
                 "Expert stevedoring services for smooth, safe, and effective cargo handling, minimizing delays and maximizing efficiency.",
-              imgUrl:
-                "https://images.unsplash.com/photo-1607672632458-9eb56696346b?q=80&w=1914&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8MHx8fA%3D%3D",
+              imgUrl: "/img/slied1.jpg",
             },
             {
               title: "P&I Insurance",
               description:
                 "Comprehensive P&I insurance for complete protection against maritime liabilities, offering peace of mind for your operations.",
-              imgUrl:
-                "https://images.unsplash.com/photo-1607672632458-9eb56696346b?q=80&w=1914&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8MHx8fA%3D%3D",
+              imgUrl: "/img/slied1.jpg",
             },
             {
               title: "Logistics",
               description:
                 "Seamless logistics management, handling every detail of your shipping needs so you can focus on growing your business.",
-              imgUrl:
-                "https://images.unsplash.com/photo-1607672632458-9eb56696346b?q=80&w=1914&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8MHx8fA%3D%3D",
+              imgUrl: "/img/slied1.jpg",
             },
           ].map((service, index) => (
             <div
