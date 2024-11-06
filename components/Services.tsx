@@ -26,7 +26,7 @@ export const Services = () => {
               title: "Stevedoring",
               description:
                 "Expert stevedoring services for smooth, safe, and effective cargo handling, minimizing delays and maximizing efficiency.",
-              imgUrl: "/img/slied1.jpg",
+              imgUrl: "/img/jjhkjhk.jpeg",
             },
             {
               title: "P&I Insurance",

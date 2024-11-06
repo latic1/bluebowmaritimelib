@@ -7,31 +7,34 @@ import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 export function Footer() {
   const navigation = [
     { title: "Home", link: "/" },
-    { title: "About", link: "/about" },
-    { title: "Service", link: "/service" },
+    { title: "About", link: "/about-us" },
+    { title: "Service", link: "/services" },
     { title: "Contact", link: "/contact" },
   ];
   const legal = ["Terms", "Privacy", "Legal"];
-  
+
   return (
-    <div className="relative">
+    <div className="relative bg-blue-500">
       <Container>
-        <div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-10 mx-auto mt-5 border-t border-gray-100 dark:border-trueGray-700 lg:grid-cols-5">
+        <div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-10 mx-auto mt-5   lg:grid-cols-5">
           <div className="lg:col-span-2">
             <div>
-              <Link href="/" className="flex items-center space-x-2 text-2xl font-medium text-blue-500">
+              <Link
+                href="/"
+                className="flex items-center space-x-2 text-2xl font-medium text-white"
+              >
                 <Image
-                  src="/img/bluebowmaritimelib-logo.svg"
+                  src="/img/logo.jpeg"
                   alt="Blue Bow Maritime Agency Liberia"
                   width="32"
                   height="32"
-                  className="w-8"
+                  className="w-24"
                 />
-                <span>Blue Bow Maritime Agency Liberia</span>
+                {/* <span>Blue Bow Maritime Agency</span> */}
               </Link>
             </div>
 
-            <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
+            <div className="max-w-md mt-4 text-white">
               Our marine services business specializes in providing
               comprehensive shipping solutions, efficient stevedoring services,
               and reliable P&I insurance coverage for all your maritime needs.
@@ -44,7 +47,7 @@ export function Footer() {
                 <Link
                   key={index}
                   href={item.link}
-                  className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
+                  className="w-full px-4 py-2 text-white rounded-md   hover:text-blue-500 focus:text-blue-500 focus:bg-blue-100 focus:outline-none"
                 >
                   {item.title}
                 </Link>
@@ -57,37 +60,61 @@ export function Footer() {
                 <Link
                   key={index}
                   href={`/${item.toLowerCase()}`}
-                  className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
+                  className="w-full px-4 py-2 text-white rounded-md   hover:text-blue-500 focus:text-blue-500 focus:bg-blue-100 focus:outline-none"
                 >
                   {item}
                 </Link>
               ))}
             </div>
           </div>
-          <div>
+          <div className="text-white">
             <div>Follow us</div>
-            <div className="flex mt-5 space-x-5 text-gray-400 dark:text-gray-500">
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            <div className="flex mt-5 space-x-5 ">
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter"
+              >
                 <Twitter />
               </a>
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
                 <Facebook />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
                 <Instagram />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
                 <Linkedin />
               </a>
             </div>
           </div>
         </div>
 
-        <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400">
+        <div className="my-10 text-sm text-center text-white">
           Copyright © {new Date().getFullYear()}. Made with ♥ by{" "}
-          <a href="https://linkedin.com/in/musah-latif" target="_blank" rel="noopener noreferrer">
+          <Link
+            href="https://linkedin.com/in/musah-latif"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Musah Latif.
-          </a>
+          </Link>
         </div>
       </Container>
     </div>

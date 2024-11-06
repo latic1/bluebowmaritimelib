@@ -40,18 +40,3 @@ body {
   padding-left: 3rem;
 }
 
-/* Add this in your CSS file */
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-slideUp {
-  animation: slideUp 0.60s ease-out forwards;
-}
