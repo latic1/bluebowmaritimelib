@@ -1,3 +1,4 @@
+import { Container } from "@/components/Container";
 import Image from "next/image";
 import React from "react";
 
@@ -27,9 +28,9 @@ const Page = () => {
         </div>
       </div>
 
-      <section className="py-10 sm:py-16 lg:py-24">
-        <div className="container mx-auto">
-          <div className="grid grid-cols-1 items-stretch gap-x-16 gap-y-12 lg:grid-cols-2 xl:gap-x-24">
+      <Container>
+        <section className="py-10 sm:py-16 lg:py-24">
+          <div className="grid grid-cols-1 lg:grid-cols-2 xl:gap-x-24">
             <div className="relative h-full lg:h-auto">
               <img
                 src="https://cdn.rareblocks.xyz/collection/celebration/images/content/2/girl-drinking-coffee.jpg"
@@ -75,8 +76,8 @@ const Page = () => {
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </Container>
     </div>
   );
 };
