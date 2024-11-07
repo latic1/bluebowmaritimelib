@@ -16,7 +16,7 @@ export function Footer() {
   return (
     <div className="relative bg-blue-500">
       <Container>
-        <div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-10 mx-auto mt-5   lg:grid-cols-5">
+        <div className="mx-auto mt-5 grid max-w-screen-xl grid-cols-1 gap-10 pt-10 lg:grid-cols-5">
           <div className="lg:col-span-2">
             <div>
               <Link
@@ -34,7 +34,7 @@ export function Footer() {
               </Link>
             </div>
 
-            <div className="max-w-md mt-4 text-white">
+            <div className="mt-4 max-w-md text-white">
               Our marine services business specializes in providing
               comprehensive shipping solutions, efficient stevedoring services,
               and reliable P&I insurance coverage for all your maritime needs.
@@ -42,12 +42,12 @@ export function Footer() {
           </div>
 
           <div>
-            <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
+            <div className="-ml-3 -mt-2 flex w-full flex-wrap lg:ml-0">
               {navigation.map((item, index) => (
                 <Link
                   key={index}
                   href={item.link}
-                  className="w-full px-4 py-2 text-white rounded-md   hover:text-blue-500 focus:text-blue-500 focus:bg-blue-100 focus:outline-none"
+                  className="w-full rounded-md px-4 py-2 text-white hover:text-blue-500 focus:bg-blue-100 focus:text-blue-500 focus:outline-none"
                 >
                   {item.title}
                 </Link>
@@ -55,12 +55,12 @@ export function Footer() {
             </div>
           </div>
           <div>
-            <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
+            <div className="-ml-3 -mt-2 flex w-full flex-wrap lg:ml-0">
               {legal.map((item, index) => (
                 <Link
                   key={index}
                   href={`/${item.toLowerCase()}`}
-                  className="w-full px-4 py-2 text-white rounded-md   hover:text-blue-500 focus:text-blue-500 focus:bg-blue-100 focus:outline-none"
+                  className="w-full rounded-md px-4 py-2 text-white hover:text-blue-500 focus:bg-blue-100 focus:text-blue-500 focus:outline-none"
                 >
                   {item}
                 </Link>
@@ -69,7 +69,7 @@ export function Footer() {
           </div>
           <div className="text-white">
             <div>Follow us</div>
-            <div className="flex mt-5 space-x-5 ">
+            <div className="mt-5 flex space-x-5">
               <a
                 href="https://twitter.com"
                 target="_blank"
@@ -106,7 +106,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="my-10 text-sm text-center text-white">
+        <div className="py-10 text-center text-sm text-white">
           Copyright © {new Date().getFullYear()}. Made with ♥ by{" "}
           <Link
             href="https://linkedin.com/in/musah-latif"
