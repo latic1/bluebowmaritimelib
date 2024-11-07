@@ -1,4 +1,5 @@
 import ServiceCard from "@/components/ServiceCard";
+import Image from "next/image";
 import React from "react";
 
 const services = [
@@ -42,34 +43,42 @@ const services = [
   },
 ];
 
-const ServicesPage = () => (
-  <div>
-  <div className="relative w-full h-[320px]" id="home">
-    <div className="absolute inset-0">
-      <img
-        src="/img/container-vessel-4989914_1280.jpg"
-        alt="Container Vessel at Sea"
-        className="object-cover object-center w-full h-full"
-      />
-    </div>
-    <div className="absolute inset-0 bg-black bg-opacity-40"></div>
-    <div className="absolute inset-9 container mx-auto flex flex-col md:flex-row items-center justify-between z-10">
-      <div className="md:w-1/2 mb-4 md:mb-0">
-        <h1 className="text-white text-4xl md:text-5xl leading-tight mb-2 font-semibold">
-          Services
-        </h1>
+const ServicesPage = () => {
+  return (
+    <div className="pt-[90px] relative w-full z-0">
+      {" "}
+      {/* Adjust top padding based on navbar height */}
+      <div className="relative h-[320px] w-full overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="/img/container-vessel-4989914_1280.jpg"
+            alt="Container Vessel at Sea"
+            layout="fill"
+            objectFit="cover"
+            className="h-full w-full object-cover"
+          />
+          <div
+            className="absolute inset-0 bg-black/60"
+            aria-hidden="true"
+          ></div>
+        </div>
+        <div className="container absolute inset-9 z-10 mx-auto flex flex-col items-center justify-between md:flex-row">
+          <div className="mb-4 md:mb-0 md:w-1/2">
+            <h1 className="mb-2 text-4xl font-semibold leading-tight text-white md:text-5xl">
+              Services
+            </h1>
+          </div>
+        </div>
       </div>
+      <section className="bg-white py-10 sm:py-16 lg:py-24">
+        <div className="mx-auto max-w-7xl space-y-10 px-4 sm:space-y-14 sm:px-6 lg:space-y-20 lg:px-8">
+          {services.map((service, index) => (
+            <ServiceCard key={index} service={service} index={index} />
+          ))}
+        </div>
+      </section>
     </div>
-  </div>
-
-  <section className="py-10 bg-white sm:py-16 lg:py-24">
-    <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 lg:space-y-20 sm:space-y-14 space-y-10">
-      {services.map((service, index) => (
-        <ServiceCard key={index} service={service} index={index} />
-      ))}
-    </div>
-  </section>
-</div>
-);
+  );
+};
 
 export default ServicesPage;

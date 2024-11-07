@@ -23,24 +23,24 @@ export const Carousel = () => {
         {slides.map((slide, index) => (
           <div
             key={index}
-            className="embla__slide relative flex h-[20rem] items-center justify-start  lg:h-[45rem]"
+            className="embla__slide relative flex h-[30rem] items-center justify-start lg:h-[45rem]"
           >
             <div className="absolute z-20 flex h-full flex-col justify-center p-10 text-center text-white sm:px-24 md:w-2/3 md:text-left">
-              <h1 className="mb-2 text-2xl font-black sm:text-3xl lg:text-6xl ">
+              <h1 className="mb-2 text-3xl font-black sm:text-3xl lg:text-6xl">
                 {slide.header}
               </h1>
-              <p className="mb-2 font-semibold text-xl">{slide.details}</p>
-              <div className="mt-5">
+              <p className="mb-2 font-semibold md:text-xl">{slide.details}</p>
+              <div className="mt-5 w-full">
                 {" "}
                 <Link href="/contact-us">
                   {" "}
-                  <button className="bg-white text-black py-4 px-6 rounded-full flex items-center">
+                  <button className="flex items-center justify-center rounded-full bg-white px-3 py-2 text-black md:px-6 md:py-4">
                     Contact Us <ChevronRightIcon />{" "}
                   </button>
                 </Link>
               </div>
             </div>
-            <div className=" absolute bg-black top-0 left-0 opacity-50 h-full w-full z-10"></div>
+            <div className="absolute left-0 top-0 z-10 h-full w-full bg-black opacity-50"></div>
             <Image
               src={slide.image}
               alt="Background image"

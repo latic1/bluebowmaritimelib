@@ -19,7 +19,7 @@ export const Navbar = () => {
   };
 
   return (
-    <div className="w-full fixed top-0 left-0 z-50 bg-white shadow-md">
+    <div> <div className="w-full fixed top-0 left-0 z-50 bg-white shadow-md ">
       <nav className="container flex items-center justify-between px-8 py-4 mx-auto lg:justify-between xl:px-1">
         {/* Logo */}
         <Link href="/" aria-label="Homepage">
@@ -115,6 +115,7 @@ export const Navbar = () => {
           </ul>
         </div>
       </nav>
-    </div>
+    </div></div>
+   
   );
 };
