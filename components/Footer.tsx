@@ -113,7 +113,7 @@ export function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Musah Latif.
+            HHY.
           </Link>
         </div>
       </Container>
